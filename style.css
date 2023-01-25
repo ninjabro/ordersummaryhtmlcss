@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --redhatdisplay: "Red Hat Display", sans-serif;
+
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+  --smallcontainercolor: hsl(230, 75%, 98%);
+  --Mobile: 375px;
+  --Desktop: 1440px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  max-width: var(--Desktop);
+  background-color: var(--Paleblue);
+  font-family: var(--redhatdisplay);
+  max-width: var(--Desktop);
+}
+.container {
+  width: 320px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#header__img,
+img {
+  max-width: 100%;
+  max-height: 165px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.description > h1 {
+  font-size: 25px;
+}
+.description > p,
+.description > h1 {
+  font-family: var(--redhatdisplay);
+}
+.description > p {
+  font-size: 14px;
+  line-height: 1.2rem;
+  margin-top: 20px;
+  opacity: 50%;
+}
+
+.price__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 280px;
+  background-color: var(--smallcontainercolor);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 65px;
+  margin-top: 5px;
+}
+
+.price__section > img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 35px;
+  width: 35px;
+  margin-left: 15px;
+}
+
+.plan > h3 {
+  font-size: small;
+}
+
+.plan > p {
+  font-size: 12px;
+  opacity: 50%;
+  margin-top: 2px;
+}
+.price__section a {
+  font-size: 12px;
+  margin-right: 15px;
+}
+
+.btn__payment {
+  height: 40px;
+  width: 280px;
+  border: none;
+  margin-top: 25px;
+  color: white;
+  background-color: var(--Brightblue);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cancel__order {
+  text-decoration: none;
+  color: var(--Desaturatedblue);
+  font-size: small;
+  margin-top: 25px;
+}
+
+a,
+.btn__payment,
+.cancel__order {
+  cursor: pointer;
+}
