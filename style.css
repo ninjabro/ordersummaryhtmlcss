@@ -14,6 +14,10 @@
   --Desaturatedblue: hsl(224, 23%, 55%);
   --Darkblue: hsl(223, 47%, 23%);
   --smallcontainercolor: hsl(230, 75%, 98%);
+  --hover-Brightblue: hsl(245, 75%, 32%);
+  --box-shadow: hsla(227, 10%, 83%, 0.795);
+  --black: hsl(0, 100%, 0%);
+  --white:hsl(0, 100%, 100%)
   --Mobile: 375px;
   --Desktop: 1440px;
 }
@@ -33,10 +37,10 @@ body {
 }
 .container {
   width: 320px;
-  height: 530px;
+  height: 550px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -67,9 +71,10 @@ img {
 }
 .description > p {
   font-size: 14px;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   margin-top: 20px;
   opacity: 50%;
+  font-weight: 500;
 }
 
 .price__section {
@@ -121,11 +126,12 @@ img {
   width: 280px;
   border: none;
   margin-top: 30px;
-  color: white;
+  color:var(--white);
   background-color: var(--Brightblue);
   border-radius: 10px;
   padding: 10px;
   font-weight: 700;
+  box-shadow: 0em 1em 1em 0.25em;
 }
 
 .cancel__order {
@@ -144,12 +150,24 @@ a,
 .attribution {
   margin-top: 40px;
   font-family: "Montserrat", sans-serif;
-  font-size: small;
+  font-size: 10px;
+  margin-left: 40px;
 }
+
 .attribution > a {
   text-decoration: none;
   color: var(--Brightblue);
 }
+
+.cancel__order:hover,
+#change {
+  color: var(--black);
+}
+
+.btn__payment:hover {
+  background-color: var(--hover-Brightblue);
+}
+
 @media (max-width: 450px) {
   body {
     background-image: url(./images/pattern-background-mobile.svg);
