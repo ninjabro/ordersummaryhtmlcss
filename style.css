@@ -17,7 +17,7 @@
   --hover-Brightblue: hsl(245, 75%, 32%);
   --box-shadow: hsla(227, 10%, 83%, 0.795);
   --black: hsl(0, 100%, 0%);
-  --white:hsl(0, 100%, 100%)
+  --white: hsl(0, 100%, 100%);
   --Mobile: 375px;
   --Desktop: 1440px;
 }
@@ -126,7 +126,7 @@ img {
   width: 280px;
   border: none;
   margin-top: 30px;
-  color:var(--white);
+  color: var(--white);
   background-color: var(--Brightblue);
   border-radius: 10px;
   padding: 10px;
