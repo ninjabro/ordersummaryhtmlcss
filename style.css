@@ -129,6 +129,7 @@ img {
   color: var(--white);
   background-color: var(--Brightblue);
   border-radius: 10px;
+  font-size: 1rem;
   padding: 10px;
   font-weight: 700;
   box-shadow: 0em 1em 1em 0.25em var(--box-shadow);
